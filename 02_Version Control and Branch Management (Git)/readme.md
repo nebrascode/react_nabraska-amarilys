@@ -1,4 +1,4 @@
-##(02) version control and branch management (GIT)##
+<h2>(02) version control and branch management (GIT)</h2>
 
 3 poin yang telah dipelajari: 
 
