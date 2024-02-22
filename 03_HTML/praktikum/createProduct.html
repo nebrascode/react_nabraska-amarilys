@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form create product</title>
+</head>
+<body>
+    <h1>Create Product</h1>
+
+    <div class="detail">
+        <h3>Detail Product</h3>
+        <form>
+            <div>
+                <label for="nama-produk">Product name:</label><br>
+                <input type="text" required>
+            </div><br>
+
+            <div>
+                <label for="kategori-produk">Product category:</label><br>
+                <select>
+                <option>--select--</option>
+                <option>Option1</option>
+                <option>Option2</option>
+                <option>Option3</option>
+                <option>Option4</option>
+                </select>
+            </div><br>
+
+            <div>
+                <label for="product-freshness">Product Freshness:</label><br>
+                <label for="brand-new">Brand New</label>
+                <input type="radio" id="brand-new"> <br>
+
+                <label for="second-hank">second-hank</label>
+                <input type="radio" id="second-hank"> <br>
+
+                <label for="refurbished">Refurbished</label>
+                <input type="radio" id="refurbished"> <br>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="image">Image of Produc:t</label>
+                <input type="file" id="image" name="image"><br>
+            </div> <br>
+
+            <div>
+                <label for="description">Additional Description:</label> <br>
+                <textarea id="alamat" name="alamat" rows="10"></textarea>
+            </div><br>
+
+            <div>
+                <label for="price">Product Price:</label>
+                <input type="number" placeholder="$ 100" min="100" readonly>
+            </div><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
