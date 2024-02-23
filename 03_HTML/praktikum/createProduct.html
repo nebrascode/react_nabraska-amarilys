@@ -6,58 +6,59 @@
     <title>Form create product</title>
 </head>
 <body>
-    <h1>Create Product</h1>
+    <h1>Tantangan HTML - Nabraska Amarilys Sholikhah</h1>
 
     <div class="detail">
         <h3>Detail Product</h3>
         <form>
             <div>
                 <label for="nama-produk">Product name:</label><br>
-                <input type="text" required>
+                <input type="text" id="nama-produk" name="nama-produk" minlength="6" maxlength="50" required>
             </div><br>
-
+        
             <div>
                 <label for="kategori-produk">Product category:</label><br>
-                <select>
-                <option>--select--</option>
-                <option>Option1</option>
-                <option>Option2</option>
-                <option>Option3</option>
-                <option>Option4</option>
+                <select id="kategori-produk" name="kategori-produk" required>
+                    <option value="">--select--</option>
+                    <option value="Option1">Option1</option>
+                    <option value="Option2">Option2</option>
+                    <option value="Option3">Option3</option>
+                    <option value="Option4">Option4</option>
                 </select>
             </div><br>
-
+        
             <div>
                 <label for="product-freshness">Product Freshness:</label><br>
                 <label for="brand-new">Brand New</label>
-                <input type="radio" id="brand-new"> <br>
-
-                <label for="second-hank">second-hank</label>
-                <input type="radio" id="second-hank"> <br>
-
+                <input type="radio" id="brand-new" name="produk" required> <br>
+        
+                <label for="second-hank">Second-hand</label>
+                <input type="radio" id="second-hank" name="produk" required> <br>
+        
                 <label for="refurbished">Refurbished</label>
-                <input type="radio" id="refurbished"> <br>
+                <input type="radio" id="refurbished" name="produk" required> <br>
             </div>
-
+        
             <br>
-
+        
             <div>
-                <label for="image">Image of Produc:t</label>
-                <input type="file" id="image" name="image"><br>
+                <label for="image">Image of Product: </label>
+                <input type="file" id="image" name="image" required><br>
             </div> <br>
-
+        
             <div>
                 <label for="description">Additional Description:</label> <br>
-                <textarea id="alamat" name="alamat" rows="10"></textarea>
+                <textarea id="description" name="description" rows="10" required></textarea>
             </div><br>
-
+        
             <div>
                 <label for="price">Product Price:</label>
-                <input type="number" placeholder="$ 100" min="100" readonly>
+                <input type="number" id="price" name="price" placeholder="$ 100" min="100" required>
             </div><br>
-
+        
             <button type="submit">Submit</button>
         </form>
+        
     </div>
     
 </body>
