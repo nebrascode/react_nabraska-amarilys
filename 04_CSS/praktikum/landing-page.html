@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
     <title>Latihan HTML</title>
 </head>
 <body>
@@ -14,15 +16,12 @@
     <section class="hero">
         <div class="hero-text">
             <h1>Better Solutions For Your Business</h1>
-            <p style="color: grey;">We are team of talented designers making websites with Bootstrap</p>
-            <table>
-                <tr>
-                    <td style="width: 70%;"><button type="button" style="padding: 8px;"><a href="createProduct.html" style="text-decoration: none; color: black;">get started</a></button></td>
-                    <td><a href="#" style="text-decoration: none; color: black;">watch video</a></td>
-                </tr>
-            </table><br>
+            <p>We are team of talented designers making websites with Bootstrap</p>
+            <div class="btn-wrap">
+                <a href="createProduct.html" class="btn-primer">get started</a>
+                <a href="#">watch video</a>
+            </div>
         </div>
-        <br><br>
         <div class="hero-image">
             <img src="assets/hero-image.png" alt="hero-image" height="400">
         </div>
@@ -31,16 +30,15 @@
     <section class="newsletter">
         <h2>Join Our Newsletter</h2>
         <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-        <form>
+        <div class="form">
             <input type="search">
-        </form>
-        <br>
-        <button type="button" style="padding: 8px;"><a href="createProduct.html" style="text-decoration: none; color: black;">get started</a></button>
+            <a href="createProduct.html" class="btn-primer" type="submit">Subscribe</a>
+        </div>
     </section>
 
     <footer>
         <p>© Copyright <strong>Arsha</strong>. All Rights Reserved</p>
-        <p>Designed by BootstrapMade</p>
+        <p>Designed by <span id="footer-bts">BootstrapMade</span></p>
     </footer>
 </body>
 </html>
