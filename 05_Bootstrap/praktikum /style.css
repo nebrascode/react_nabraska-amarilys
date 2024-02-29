@@ -13,14 +13,16 @@ body{
 
 a{
     text-decoration: none;
-    color: white;
-    font-size: 16px;
     font-family:"Open Sans", sans-serif;
 
 }
 
 a:hover{
     color: #47B2E4;
+}
+
+.hero a, .newsletter a{
+    color: white;
 }
 
 .btn-primer{
@@ -131,26 +133,41 @@ a:hover{
     
 }
 
-
 footer{
-    background-color: #37517E;
-    padding-block: 31px;
-    padding-inline: 80px;color: white;
-    display: flex;
-    justify-content: space-between;
+    color: #5E5E5E;
+    font-size: 14px;
+}
+footer h1{
+    color: #37517E;
+}
+footer .text-blue{
+    color: #37517E;
+    font-size: 16px;
 }
 
-.footer p{
-    font-family: Open Sans;
-    font-size: 14px;
-    font-weight:200;
-    line-height: 21px;
-    letter-spacing: 0em;
+footer li a{
+    color:#5E5E5E
 }
+
+footer .bg-blue{
+    background-color: #37517E;
+
+}
+
+ion-icon{
+    font-size: 12px;
+    background-color: #47B2E4;
+    padding:9px;
+    border-radius: 50%;
+    color: #37517E;
+}
+
 
 #footer-bts{
     color:#47B2E4;
 }
+
+
 
 @media screen and (max-width:720px) {
     .hero{
@@ -180,10 +197,6 @@ footer{
         flex-direction: column;
         padding-inline: 2rem;
     }
-}
-
-@media screen and (max-width:1200) {
-    
 }
 
 

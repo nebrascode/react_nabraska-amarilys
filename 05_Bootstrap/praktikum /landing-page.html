@@ -1,70 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
 
-    <title>Latihan HTML</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Latihan HTML</title>
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Simple Header</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-primary btn-primary rounded-2 text-white" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-primary" aria-current="page" href="#">Feature</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-primary" aria-current="page" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-primary" aria-current="page" href="#">FaQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-primary" aria-current="page" href="#">About</a>
-              </li>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Simple Header</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-primary btn-primary rounded-2 text-white" aria-current="page"
+              href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-primary" aria-current="page" href="#">Feature</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-primary" aria-current="page" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-primary" aria-current="page" href="#">FaQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-primary" aria-current="page" href="#">About</a>
+          </li>
+      </div>
+    </div>
+  </nav>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Better Solutions For Your Business</h1>
-            <p>We are team of talented designers making websites with Bootstrap</p>
-            <div class="btn-wrap">
-                <a href="createProduct.html" class="btn-primer">get started</a>
-                <a href="#">watch video</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="assets/hero-image.png" alt="hero-image" height="400">
-        </div>
-    </section>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Better Solutions For Your Business</h1>
+      <p>We are team of talented designers making websites with Bootstrap</p>
+      <div class="btn-wrap">
+        <a href="createProduct.html" class="btn-primer">get started</a>
+        <a href="#">watch video</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/hero-image.png" alt="hero-image" height="400">
+    </div>
+  </section>
 
-    <section class="newsletter">
-        <h2>Join Our Newsletter</h2>
-        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-        <div class="form">
-            <input type="search">
-            <a href="createProduct.html" class="btn-primer" type="submit">Subscribe</a>
+  <section class="newsletter">
+    <h2>Join Our Newsletter</h2>
+    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+    <div class="form">
+      <input type="search">
+      <a href="createProduct.html" class="btn-primer" type="submit">Subscribe</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid bg-white py-4 px-5 mt-3">
+      <div class="d-flex flex-wrap">
+        <div class="col-md-3 col-sm-12">
+          <h1 class="fw-bold">ARSHA</h1>
+          <p>A108 Adam Street
+            New York,<br> NY 535022
+            United States </p>
+
+          <p class="mt-4"><strong>Phone</strong>:+1 5589 55488 55 
+          <br><strong>Email</strong>: info@example.com</p>
         </div>
-    </section>
 
-    <footer>
-        <p>© Copyright <strong>Arsha</strong>. All Rights Reserved</p>
-        <p>Designed by <span id="footer-bts">BootstrapMade</span></p>
-    </footer>
+        <div class="col-md-3 col-sm-12">
+          <p class="fw-bold text-blue">Useful Links</p>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Term of Services</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <p class="fw-bold text-blue">Our Services</p>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Term of Services</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <p class="fw-bold text-blue">Our Social Networks</p>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <ul class="list-unstyled d-flex gap-3 flex-wrap">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-chrome"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid bg-blue text-white d-flex align-items-center justify-content-between py-3 px-5">
+      <p class="mb-0">© Copyright <strong>Arsha</strong>. All Rights Reserved</p>
+      <p class="mb-0">Designed by <span id="footer-bts">BootstrapMade</span></p>
+    </div>
+  </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
