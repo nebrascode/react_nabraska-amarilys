@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-form.css">
+    <title>Create Product</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Simple Header</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary btn-primary rounded-2 text-white" aria-current="page"
+                            href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="#">Feature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="#">FaQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="#">About</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-5">
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png"
+                alt="Logo" width="72" height="57" class="d-inline-block align-text-top">
+            <h2>Create product</h2>
+            <p>Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a
+                validation state that can be triggered by attempting to submit the form without completing it.</p>
+        </div>
+
+        <div class="container container-form mt-4">
+            <h3>Detail product</h3>
+            <form class="form">
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">product name</label><br>
+                    <input type="text" id="inputName" class="form-control" maxlength="25" required>
+                    <div id="textLength">0/25</div>
+                    <div class="errorMsg"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="kategori">product category</label><br>
+                    <select class="form-select" id="kategori" required>
+                        <option selected disabled>choose</option>
+                        <option value="1">Opsi 1</option>
+                        <option value="2">Opsi 2</option>
+                        <option value="3">Opsi 3</option>
+                        <option value="4">Opsi 4</option>
+                    </select>
+                    <div class="errorMsg"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="image" class="label-form">Image of product</label>
+                    <input type="file" class="form-control primary" id="image" required>
+                    <div class="errorMsg"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="kategori-produk" class="form-label">Product Freshness</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="kategori-produk" id="option1" value="Option1"
+                            required>
+                        <label class="form-check-label" for="option1">Brand new</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="kategori-produk" id="option2" value="Option2"
+                            required>
+                        <label class="form-check-label" for="option2">Second Hand</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="kategori-produk" id="option3" value="Option3"
+                            required>
+                        <label class="form-check-label" for="option3">Refufbished</label>
+                    </div>
+                    <div class="errorMsg"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Additional Description</label> <br>
+                    <textarea class="form-control" id="description" name="description" rows="10" required></textarea>
+                    <div class="errorMsg"></div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="price">Product Price</label>
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input type="number" class="form-control" id="price" required>
+                    </div>
+                    <div class="errorMsg"></div>
+                </div>
+
+                <div class="d-grid">
+                    <button class="btn btn-primary" type="submit" id="btn-submit">Submit form</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="container table-product mt-5">
+        <h3>Product List</h3>
+        <table class="table table-striped">
+            <tr>
+                <th>No</th>
+                <th>Product Name</th>
+                <th>Product Category</th>
+                <th>Image of Product</th>
+                <th>Product Freshnes</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>lorem</td>
+                <td>ipsum</td>
+                <td>image</td>
+                <td>Fresh</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>lorem</td>
+                <td>ipsum</td>
+                <td>image</td>
+                <td>Fresh</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>lorem</td>
+                <td>ipsum</td>
+                <td>image</td>
+                <td>Fresh</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>84</td>
+            </tr>
+        </table>
+
+        <form role="search ">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <div class="btn-group">
+                <button class="btn btn-primary" type="submit">Deletion</button>
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('inputName').addEventListener('input', function () {
+                var input = document.getElementById("inputName");
+                var lengthDisplay = document.getElementById("textLength");
+                var currentLength = input.value.length;
+                var maxLength = input.getAttribute("maxlength");
+                lengthDisplay.textContent = currentLength + "/" + maxLength;
+                lengthDisplay.style.color = 'grey';
+
+                if (currentLength > 10) {
+                   lengthDisplay.innerHTML='Last Name must not exceed 25 characters.';
+                }
+            });
+
+            document.getElementById('btn-submit').addEventListener('click', function (event) {
+                event.preventDefault();
+
+                // deklarasi input dan value
+                const productCategory = document.getElementById('kategori').value;
+                const productImage = document.getElementById('image').value.trim();
+                const productFreshness = document.querySelector('input[name="kategori-produk"]:checked');
+                const productDescription = document.getElementById('description').value.trim();
+                const productPrice = document.getElementById('price').value.trim();
+                const productName = document.getElementById('inputName').value.trim();
+
+                var errorElements = document.getElementsByClassName('errorMsg');
+                for (var i = 0; i < errorElements.length; i++) {
+                    errorElements[ i ].innerHTML = '';
+                    errorElements[ i ].style.color = 'red';
+                }
+
+                var errorMessages = [];
+
+                // Product Name validation
+                if (productName === '') {
+                    errorElements[ 0 ].innerHTML = 'The product name must be filled in.';
+                } else if (/[@#{}]/.test(productName)) {
+                    errorElements[ 0 ].innerHTML = 'The product name must not contain symbols.';
+                }
+
+                // Product Category validation
+                if (productCategory === '') {
+                    errorElements[ 1 ].innerHTML = 'The product category must be filled in.';
+                }
+
+                // Product Image validation (optional, can be customized as needed)
+                if (productImage === '') {
+                    errorElements[ 2 ].innerHTML = 'The product image must be uploaded in.';
+                }
+
+                // Product Freshness validation
+                if (!productFreshness) {
+                    errorElements[ 3 ].innerHTML = 'The product name must be selected.';
+                }
+
+                // Product Description validation
+                if (productDescription === '') {
+                    errorElements[ 4 ].innerHTML = 'The product description must be filled in.';
+                }
+
+                // Product Price validation
+                if (productPrice === '') {
+                    errorElements[ 5 ].innerHTML = 'The product price must be filled in.';
+                }
+
+                // Check if there are error messages
+                for (var i = 0; i < errorElements.length; i++) {
+                    if (errorElements[ i ].innerHTML !== '') {
+                        errorMessages.push(errorElements[ i ].innerHTML);
+                    }
+                }
+
+                // Display error messages
+                if (errorMessages.length > 0) {
+                    alert('Form tidak boleh kosong');
+                    return;
+                }
+            });
+        });
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
