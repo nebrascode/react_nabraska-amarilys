@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unknown-property */
+import logo from '../assets/hero';
+
 export default function Hero() {
     return (
         <div class="container-fluid flex justify-between items-center px-52 h-full py-10">
@@ -16,7 +18,7 @@ export default function Hero() {
                 </div>
             </div>
             <div className="hero-image w-6/12 py-6">
-                <img class="h-auto max-w-full " src="src/assets/hero.png" alt="image hero" />
+                <img class="h-auto max-w-full " src={logo} alt="image hero" />
             </div>
 
         </div>
