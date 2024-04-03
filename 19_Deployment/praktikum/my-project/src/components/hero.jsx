@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unknown-property */
-import logo from '../assets/hero.png';
+import logo from '../../public/assets/hero.png';
 
 export default function Hero() {
     return (
