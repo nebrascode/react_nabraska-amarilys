@@ -15,7 +15,7 @@ export default function About() {
                         <button class="hover:bg-gray-700 text-white font-bold mt-6 md:mt-10 py-2 px-4 border bg-slate-800 rounded-xl block mx-auto md:mx-0">BOOK A DEMO</button>
                     </div>
                     <div class="img-about md:ml-8 mt-8 md:mt-0">
-                        <img src="/assets/diagram-about.svg" alt="" class="w-full" />
+                        <img src="src/assets/diagram-about.svg" alt="" class="w-full" />
                     </div>
                 </div>
             </div>
