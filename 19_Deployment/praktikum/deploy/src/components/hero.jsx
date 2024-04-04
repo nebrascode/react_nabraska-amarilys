@@ -16,7 +16,7 @@ export default function Hero() {
                     </div>
                 </div>
                 <div class="hero-image w-full md:w-6/12 py-6 md:py-0">
-                    <img class="h-auto max-w-full" src="src/assets/hero.png" alt="image hero" />
+                    <img class="h-auto max-w-full" src="/assets/hero.png" alt="image hero" />
                 </div>
             </div>
         </div>
