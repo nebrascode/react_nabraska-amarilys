@@ -1,4 +1,4 @@
-*Ringkasan singkat tentang global state, Redux, dan pengambilan data dalam React: *
+*Ringkasan singkat tentang global state, Redux, dan pengambilan data dalam React:*
 
 1. **Global State**:
    - **Definisi**: Global state adalah data yang dapat diakses dan dimodifikasi dari berbagai komponen dalam aplikasi React, tanpa harus melewati prop.
