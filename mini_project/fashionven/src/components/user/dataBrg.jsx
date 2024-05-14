@@ -37,7 +37,7 @@ const DataBarang = () => {
 
             console.log("Deleted item:", data);
             alert('Data berhasil dihapus');
-            window.location.reload();
+            navigate('/data-barang')
         } catch (error) {
             console.error("Terjadi kesalahan:", error);
             alert("Terjadi kesalahan: " + error.message);
