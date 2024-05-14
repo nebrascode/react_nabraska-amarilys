@@ -1,10 +1,10 @@
 import { useNavigate, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import {supabase} from "../../lib/helper/supabaseClient"
+import { supabase } from "../../lib/helper/supabaseClient"
 
 const DataBarang = () => {
     const navigate = useNavigate();
-    const [barangs, setBarangs] = useState([]);
+    const [ barangs, setBarangs ] = useState([]);
 
     useEffect(() => {
         fetchBarang();
@@ -22,6 +22,7 @@ const DataBarang = () => {
     }
 
     const handleDelete = async (id) => {
+        console.log("Attempting to delete item with ID:", id);
         try {
             const { data, error } = await supabase
                 .from("barang")
@@ -29,13 +30,17 @@ const DataBarang = () => {
                 .eq('id', id);
 
             if (error) {
-                console.error(error.message);
+                console.error("Error deleting item:", error.message);
+                alert(`Error deleting item: ${error.message}`);
+                return;
             }
-            console.log(data);
-            alert('data berhasil dihapus');
+
+            console.log("Deleted item:", data);
+            alert('Data berhasil dihapus');
             window.location.reload();
         } catch (error) {
             console.error("Terjadi kesalahan:", error);
+            alert("Terjadi kesalahan: " + error.message);
         }
     }
 

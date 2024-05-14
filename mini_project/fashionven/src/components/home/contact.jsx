@@ -27,6 +27,8 @@ export default function Contact() {
             ],
         };
 
+        console.log(APIBody)
+
         try {
             //pemanggilan data
             const response = await fetch(
@@ -62,7 +64,7 @@ export default function Contact() {
                     <p className="text-white text-md mt-4">Jangan lewatkan kesempatan untuk bertanya langsung pada customer kami.</p>
                 </div>
 
-                <form className="w-8/12 mt-8 mx-auto" onSubmit={handleSubmit}>
+                <form className="w-8/12 mt-8 mx-auto"  onClick={handleSubmit}>
                     <div className="flex items-center max-w-full mx-auto">
                         <input
                             type="text"
