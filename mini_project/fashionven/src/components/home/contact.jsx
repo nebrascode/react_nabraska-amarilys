@@ -5,7 +5,7 @@ export default function Contact() {
     const [ userInput, setUserInput ] = useState("");
     const [ respond, setRespond ] = useState("");
 
-    const API_KEY = import.meta.env.API_KEY;
+    const API_KEY = import.meta.env.VITE_API_KEY;
 
     const handleSubmit = async (e) => {
         //menyambungkan ke Open ai dan memasukkan prompt
@@ -64,7 +64,7 @@ export default function Contact() {
                     <p className="text-white text-md mt-4">Jangan lewatkan kesempatan untuk bertanya langsung pada customer kami.</p>
                 </div>
 
-                <form className="w-8/12 mt-8 mx-auto"  onClick={handleSubmit}>
+                <form className="w-8/12 mt-8 mx-auto"  onSubmit={handleSubmit}>
                     <div className="flex items-center max-w-full mx-auto">
                         <input
                             type="text"
