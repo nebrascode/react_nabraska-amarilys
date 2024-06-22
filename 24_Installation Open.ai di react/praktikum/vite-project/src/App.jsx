@@ -9,7 +9,7 @@ function App() {
     setUserInput(data.target.value)
   }
 
-  const API_KEY = 'sk-proj-xvlIY5kraF4mDjuQ9waMT3BlbkFJq5VrmTXs3EqeAJGID2yM';
+  const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
   
   async function handleClick(e){
     console.log(userInput)
